@@ -1,0 +1,146 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e1e2e, #25253a);
+  color: #fff;
+}
+
+/* Container */
+.container {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* Input Box */
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  background: transparent;
+  color: #fff;
+}
+
+.input .btn {
+  background: #ff6347;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input .btn:hover {
+  background: #ff3b1f;
+}
+
+/* Task List */
+.list-item {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.list-item li {
+  background: #444;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.list-item li:hover {
+  background: #555;
+}
+
+/* Checked Task */
+.list-item .checked {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+/* Edit & Delete Buttons */
+.list-item li span {
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 10px;
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.list-item li .edit-btn {
+  color: #4caf50;
+}
+
+.list-item li .edit-btn:hover {
+  background: #4caf50;
+  color: #fff;
+}
+
+.list-item li span:last-child {
+  color: #ff4c4c;
+}
+
+.list-item li span:last-child:hover {
+  background: #ff4c4c;
+  color: #fff;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
